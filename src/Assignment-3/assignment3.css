@@ -1,7 +1,55 @@
 /* Our CSS file. */
-
+html {
+    font-size: 16px;
+}
 
 .container, .content {
 width: 100%;
 height: 100%;
+}
+
+.inner-container-1 {
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 20px;
+}
+
+.left-container, .right-container {
+    width: 50%;
+}
+
+#render-wiki {
+    width: 100%;
+}
+.left-container, .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, p {
+    width: 50%;
+}
+
+/* inner-container-2 styles */
+.top-container, .bottom-container {
+    width: 100%;
+    margin-top: 10px;
+}
+#render-dictionary {
+    width: 100%;
+}
+
+/* Button styles */
+.btn {
+    border: none;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+.btn:focus, .btn:hover {
+    background-color: #fff;
+    color: #000;
 }
