@@ -20,7 +20,6 @@ const { reject } = require("../../vendor/quixote.js");
 		// Variables used by our tests. They're populated in the `before()` and `beforeEach()` functions.
 		var frame; // The Quixote test frame.
 		var container, frameDom; // The figure element inside the media object. (The icon.)
-
 		// Use Mocha's standard `before` function to set up our Quixote test frame before the tests run.
 		before(function (done) {
 			// Create the frame and load our stylesheet.
@@ -64,7 +63,7 @@ const { reject } = require("../../vendor/quixote.js");
 			assert.isTrue(
 				frame.toDomElement().contentDocument.getElementsByTagName("iframe")
 					.length === 2
-			);
+			)
 		});
 		it("Page should have two Heading tags", function () {
 			assert.isTrue(
@@ -84,7 +83,6 @@ const { reject } = require("../../vendor/quixote.js");
 					.length === 2
 			);
 		});
-
 	});
 	function isExist(target) {
 		return target.length > 0 ? true : false;

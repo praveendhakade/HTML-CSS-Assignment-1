@@ -7,9 +7,9 @@
     "quixote": "^1.0.1"
   },
   "scripts": {
-    "start" : "SET NODE_ENV=dev && node server.js",
     "dev": "jake karma & watch loose=true",
-    "test": "mocha --timeout 100000"
+    "start" : "SET NODE_ENV=dev && node server.js",
+    "test": "mocha --timeout 10000"
   },
   "devDependencies": {
     "browserify": "^14.1.0",
