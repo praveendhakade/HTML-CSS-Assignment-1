@@ -8,6 +8,10 @@ height: 100%;
 
 header{
     background: yellowgreen;
+    border: 1px solid green;
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 #header-logo, #search-form {
     display: inline-block;
@@ -32,10 +36,11 @@ header{
 
 #nav-bar {
     background-color: #999;
-    padding: 5px;
+    border: 1px solid #999;
 }
 ul {
     list-style: none;
+    padding-left: 0px;
 }
 a {
     text-decoration: none;
@@ -49,6 +54,9 @@ a:focus, a:hover{
     display: flex;
     justify-content: space-around;
 }
+#nav-bar ul li {
+    padding: 2px;
+}
 .post-img{
     width: 150px;
     height: 150px;
@@ -61,6 +69,16 @@ a:focus, a:hover{
     display: flex;
     justify-content: space-around;
     background-color: whitesmoke;
+    margin:190px 0 5px 0;
+}
+#page-content ul {
+    border: 1px solid #000;
+    height: 92%;
+    padding: 0 20px;
+}
+#page-content ul li {
+    padding: 5px;
+    margin-top: 5px;
 }
 caption {
     padding: 10px;
@@ -70,4 +88,5 @@ caption {
 #page-footer {
     padding: 10px;
     background-color: yellowgreen;
+    border: 1px solid green;
 }
